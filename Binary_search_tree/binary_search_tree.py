@@ -20,6 +20,19 @@ class Binary_serach_tree_node():
             else:
                 self.right = Binary_serach_tree_node(data)    
 
+    def find_max(self):
+        if self.right is None:
+            return self.data
+        else:
+            return self.right.find_max()
+            
+    def find_min(self):
+        if self.left is None:
+            return self.data
+        else:
+            return self.find_min()                
+
+       
     def in_order_traversal(self):
         elements  = []
 
