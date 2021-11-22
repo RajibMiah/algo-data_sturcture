@@ -25,14 +25,34 @@ class Binary_serach_tree_node():
             return self.data
         else:
             return self.right.find_max()
-            
+
     def find_min(self):
         if self.left is None:
             return self.data
         else:
-            return self.find_min()                
+            return self.find_min()  
 
-       
+    def delete(self , value):
+        if value < self.data:
+            if self.left:
+                self.left = self.left.delete(value)
+        elif value > self.data:
+            if self.right:
+                self.right  = self.right.delete(value)
+        else:
+            if self.right is None and self.left is None:
+                return None
+            if self.left is None:
+                return self.right
+            if self.right  is None:
+                return self.left
+
+            min_value = self.right.find_min()
+            self.data = min_value
+            self.right = self.right.delete(min_value)    
+
+        return self                
+
     def in_order_traversal(self):
         elements  = []
 
