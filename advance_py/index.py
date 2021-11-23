@@ -1,7 +1,18 @@
 
 
 
+#type hinting
 
+# def myfunction(myparameter:int)->str:
+#     return myparameter + 10
+
+# def myfunction(param:int) -> int:
+#     return param + 10
+
+# def otherfunction(otherparameter: str):
+#     print(otherparameter)
+
+# otherfunction(myfunction(10))
 
 # decorators
 
