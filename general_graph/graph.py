@@ -28,9 +28,15 @@ class Graph:
                 prev_path_node = self.get_path(node , end , path)
                 for p in prev_path_node:
                     node_path.append(p)
-                # print(node_path)
 
         return node_path
+
+    def get_shortest_path(self , start , end):
+        all_found_paths = self.get_path(start , end)
+        return min(all_found_paths)
+
+            
+
 
 
 if __name__ == '__main__':
@@ -48,6 +54,6 @@ if __name__ == '__main__':
     rotuer_graph = Graph(routes)
    
 
-    print('route' , rotuer_graph.get_path(start , end))
-
+    # print('route' , rotuer_graph.get_path(start , end))
+    print('shortest path' , rotuer_graph.get_shortest_path(start , end))
     # print('graph router' , rotuer_graph.graph_dict)
