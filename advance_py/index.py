@@ -1,6 +1,5 @@
 
 
-
 #type hinting
 
 # def myfunction(myparameter:int)->str:
