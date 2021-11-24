@@ -47,8 +47,7 @@ def hello(person):
     print(f"hello world!!! to person {person}")  
 
 
-if __name__ == '__main__'
-
-myfunction()
-# print(add(10, 30))
-# hello('mike')
+if __name__ == '__main__':
+    myfunction(90000)
+    # print(add(10, 30))
+    # hello('mike')
