@@ -32,7 +32,7 @@ class PersonFactory:
     @staticmethod
     def build_person(person_type):
         if person_type == "student":
-            Student()
+            return Student()
         if person_type == 'teacher':
             return Teacher()
         print("Invalid Type")
