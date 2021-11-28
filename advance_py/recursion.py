@@ -1,13 +1,13 @@
 
-#problem sum of all list  ===> x = [[1,2] ,[[3] 4, [5 , 6]] ,[7,[8]]]
+#problem calculate the  sum of  list  ===> x = [[1,2] ,[[3] 4, [5 , 6]] ,[7,[8]]]
 
 def addition(array):
-    total = 0
+    total = 0 
     for x in array:
         if type(x) != list:
-            total += x
+              total +=  x
         else:
-            total += addition(x)
+            total += addition(x) # 3 + 3 + 4 + 11 + 15 = 36
     return total
    
 
