@@ -1,5 +1,14 @@
 
+fruits = {"name":'rajib'}
 
+i = 0
+
+while i < len(fruits):
+  print(fruits[i])
+  i += 1
+
+if __name__ == '__main__':
+    pass  
 #type hinting
 
 # def myfunction(myparameter:int)->str:
