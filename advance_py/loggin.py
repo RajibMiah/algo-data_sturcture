@@ -12,4 +12,4 @@ def test():
     logging.critical('critical message here')
     print('-'*30)
 
-test()
+test(),
