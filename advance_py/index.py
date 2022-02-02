@@ -1,14 +1,62 @@
 
-fruits = {"name":'rajib'}
 
-i = 0
 
-while i < len(fruits):
-  print(fruits[i])
-  i += 1
 
-if __name__ == '__main__':
-    pass  
+
+
+
+
+
+
+
+# import random
+# n = 20
+
+# to_be_guessed = int(n * random.random()) + 1
+
+# guess = 0
+
+# while guess != to_be_guessed:
+#     guess = int(input('New number: '))
+#     if guess > 0:
+#         if guess > to_be_guessed:
+#             print('number too large')
+#         elif guess < to_be_guessed:
+#             print('Number too small')
+#     else:
+#         print('sorry that youre giving up!')
+#         break
+
+# else:
+#     print('Congratulation . You made it!!!')                
+
+
+
+# from collections import namedtuple
+# a = namedtuple('courses' , 'name , technology')
+# s = a('data science' , 'python')
+# print(s)
+
+
+
+
+
+
+
+
+
+
+# fruits = {"name":'rajib'}
+
+# i = 0
+
+# while i < len(fruits):
+#   print(fruits[i])
+#   i += 1
+
+# if __name__ == '__main__':
+#     pass  
+
 #type hinting
 
 # def myfunction(myparameter:int)->str:
