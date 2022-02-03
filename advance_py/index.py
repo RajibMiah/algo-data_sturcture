@@ -2,15 +2,23 @@
 
 
 
+# n = 10000000000
+# count = 0
+# print('is divived' , 18 % 4 == 0)
+# for i in range(2 , n):
+    
+#     if( n % i == 0):
+#         # print(i)
+#         count += 1
 
-
+# print(count)
 
 
 
 
 
 # import random
-# n = 20
+# n = 20  
 
 # to_be_guessed = int(n * random.random()) + 1
 
