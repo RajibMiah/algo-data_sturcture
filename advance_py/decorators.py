@@ -1,4 +1,17 @@
 import time
+import functools
+
+def repeat(num):
+    def decorator_repeat(func):
+        @functools.wraps(func)
+        def wrapper(*args , **kwargs):
+            for _ in range(num):
+                value = func(*args , **kwargs)
+            return value
+        return wrapper
+    return decorator_repeat
+
+               
 
 #practical example #2 timing function
 def timed(function):
@@ -46,8 +59,14 @@ def hello(person):
     print('execuite this line first ')
     print(f"hello world!!! to person {person}")  
 
+@repeat(5)
+def function(name):
+    print(f"{name}")
+
 
 if __name__ == '__main__':
-    myfunction(90000)
+    # myfunction(90000)
     # print(add(10, 30))
     # hello('mike')
+    function('python')
+
