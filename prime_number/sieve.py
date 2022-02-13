@@ -15,8 +15,14 @@ def sieve(n):
         if prime[p]:
             print(p , end = ' ') 
 
+def prime_number(n):
+    p = 2
+    while( p * p <= n):
+        if (n % p == 0):
+            return False
+        p += 1
+    return True 
        
-
 if __name__ == '__main__':
     sieve(100)
     # print( prime_number(74))
