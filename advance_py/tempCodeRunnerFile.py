@@ -1,7 +1,11 @@
-for i in range(2 , n):
-   
-#     if( n % i == 0):
-#         # print(i)
-#         count += 1
 
-# print(count)
+def fib():
+    f , s = 0 , 1
+    while True:
+        yield f
+        f , s = s , f+s
+        
+for x in fib():
+    if x > 50:
+        break
+    print(x , end= ' ')
