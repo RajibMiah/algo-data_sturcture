@@ -4,7 +4,7 @@ def prime_fact(n):
     i = 2
     count = 0
     while( i * i <= n):   
-        if(bool(n%i) == False):
+        if(n%i == 0):
             count = 0  
             while(n % i == 0):
                 count += 1
@@ -15,4 +15,4 @@ def prime_fact(n):
         print( i , "^" , 1, end=' ')      
 
 if __name__ == '__main__':
-    prime_fact(50)
+    prime_fact(12)
