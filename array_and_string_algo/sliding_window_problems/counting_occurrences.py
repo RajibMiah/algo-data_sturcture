@@ -22,12 +22,12 @@ def findOccurrence(str, ptr):
         elif(j - i + 1 == k):
             if count == 0:
                 ans += 1
+            i += 1    
             if str[i] in freq:
                 freq[str[i]] += 1
                 if freq[str[i]] == 1:
                     count += 1
-            i += 1
             j += 1  
     return ans
 
-print(findOccurrence("forxfor" ,"for"))
+print(findOccurrence("forxforxorfxforpxfro" ,"for"))
